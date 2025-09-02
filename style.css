@@ -1,0 +1,322 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #f9f5f5;
+}
+
+.social-icons {
+  text-align:left;
+   
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+ .icon-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  vertical-align: middle;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Loading Spinner */
+#loader {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #007BFF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dark Mode Toggle */
+.dark-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 999;
+}
+
+.dark-toggle i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #01080f;
+}
+
+/* Animated Gradient Background */
+header {
+  background: linear-gradient(-45deg, #007BFF, #0056b3, #00aaff, #003366);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: white;
+   
+  text-align: center;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dark-mode section {
+  background: #1e1e1e;
+}
+
+section h2 {
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+.about-images {
+  display: flex;
+  gap: 15px; /* space between images */
+   
+}
+
+.about-img {
+  flex: 1;                /* sab images equal width lengi */
+  height: 300px;          /* height fix (apne hisaab se change kar) */
+  object-fit: cover;      /* image crop hoke pura area fill karegi */
+  border-radius: 12px;
+  margin: 8px ; /* vertical margin for spacing */
+}
+
+
+ 
+/* Skills */
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.dark-mode .project-card {
+  background: #2a2a2a;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Resume Button */
+.btn {
+  display: inline-block;
+  background: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Certificates Section */
+#certificates {
+  padding: 40px;
+  background-color: white;
+  text-align: center;
+}
+
+.dark-mode  #certificates {
+  background: #2a2a2a;
+}
+.certificate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+ 
+
+.certificate {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+ .dark-mode .certificate {
+  background: #2a2a2a;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Contact Form */
+form {
+   
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.dark-mode form input,
+.dark-mode form textarea {
+  background: #333;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+form button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #218838;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .dark-toggle {
+    top: 10px;
+    right: 15px;
+  }
+}

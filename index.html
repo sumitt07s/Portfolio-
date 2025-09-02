@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+</head>
+
+<body onload="hideLoader()">
+
+  <!-- Page Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <div class="dark-toggle">
+    <i class="fas fa-moon" id="theme-icon" onclick="toggleDarkMode()"></i>
+  </div>
+
+
+
+  <!-- Header Section -->
+  <header>
+    <!-- Social Icons Section -->
+    <div class="social-icons">
+      <a href="https://github.com/sumitt07s">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sumit-singh-2336b130a">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.geeksforgeeks.org/user/sumitsicmdt/" target="_blank" title="GeeksforGeeks">
+        <img src="https://img.icons8.com/color/48/000000/GeeksforGeeks.png" alt="GFG" class="icon-img" />
+      </a>
+       
+      
+    </div>
+
+    <h1>Sumit  Kumar </h1>
+    <p>Web Developer | BCA Student | C | C++ | Python | </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <img src="Sumit1.jpg" alt="Sumit's Photo" class="about-img" />
+    <img src="Sumit2.jpg" alt="Sumit's Photo" class="about-img" />
+    <img src="sumit3.jpg" alt="Sumit's Photo" class="about-img" />
+    <p>Hello! I'm a passionate BCA student skilled in Python, C++, and Web Development. I love building clean and
+      responsive websites.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, C,C++,C#</li>
+      <li>Responsive Web Design</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="prince Trader.png" alt="PrinceTrader">
+        <h3>
+       <!-- <a href="https://badalsingh1802.github.io/PrinceTrader/" target="_blank" style="text-decoration: none; color: inherit;"> -->
+           PrinceTrader
+      </a>
+      </h3>
+ 
+        <p>A clean and responsive trading platform UI concept showcasing live market sections, price info, and modern
+          design — built using HTML, CSS, and JavaScript.</p>
+      </div>
+        <div class="project-card">
+          <img src="Landing page.png" alt="Landing Page">
+          <h3>
+       <!-- <a href="https://badalsingh1802.github.io/Landing-Page/" target="_blank" style="text-decoration: none; color: inherit;"> -->
+           Advanced Landing Page
+      </a>
+      </h3>
+           
+          <p>A modern, mobile-responsive landing page with background video, typing animation, contact form, and smooth
+            scrolling — built using HTML, CSS, and JavaScript. </p>
+        </div>
+        <div class="project-card">
+          <img src="neon calculator.png" alt="Neon Calculator">
+          <h3>
+       <!-- <a href="https://badalsingh1802.github.io/NeonCalculator/" target="_blank" style="text-decoration: none; color: inherit;"> -->
+            Neon Calculato
+      </a>
+      </h3>
+           
+          <p>A stylish calculator with glowing neon UI, smooth button effects, and history feature — built using HTML, CSS, and JavaScript.</p>
+        </div>
+       </div>
+        
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="reveal">
+    <h2>Resume</h2>
+    <p><a href="Sumit_Kumar.pdf" download class="btn">Download My Resume (PDF)</a></p>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificate-list">
+      <div class="certificate">
+        <p>📜 Spoken Tutorial Project at IIT Bombay</p>
+        <a href="SUMIT-KUMAR-Participant-Certificate.pdf" download class="download-btn">Download</a>
+      </div>
+      <div class="certificate">
+        <p>📜 Cyber job Simulation (Deloitte) </p>
+        <a href="certificate2.pdf" download class="download-btn">Download</a>
+      </div>
+      <div class="certificate">
+        <p>📜 Developer and Technology job Simulation (accenture)  </p>
+        <a href="certificate3.pdf" download class="download-btn">Download</a>
+      </div>
+       
+      </div>
+  </section>
+  <!-- Internship Section -->
+  <section id="certificates">
+    <h2>Internship</h2>
+    <div class="certificate-list">
+      <div class="certificate">
+        <p>📜 Web development (ApexPlanet Software Pvt. Ltd.)</p>
+        <a href="Internship_APSPL2511564 (1).pdf" download class="download-btn">Download</a>
+      </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/sumitsinghr04@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://badalsingh1802.github.io/BadalPortfolio/thankyou.html">
+    </form>
+
+    <p>Email:sumitsinghr04@gmail.com</p>
+    <p>Phone: +91-9102579973</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sumit Kumar . All Rights Reserved.</p>
+  </footer>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
